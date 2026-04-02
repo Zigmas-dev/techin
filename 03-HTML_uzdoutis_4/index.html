@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>03-HTML. Uždoutis 4</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        margin-bottom: 10px;
+      }
+
+      th:nth-child(1),
+      td:nth-child(1) {
+        width: 200px;
+      }
+
+      th:nth-child(n + 2),
+      td:nth-child(n + 2) {
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="width: 1000px">
+      <h4 style="text-align: center; margin: 0">Tvarkaraštis</h4>
+      <table>
+        <tr>
+          <th>Mokytojas</th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+          <th>5</th>
+          <th>6</th>
+        </tr>
+        <tr>
+          <td>
+            <div>
+              <img src="images/jonas.jpg" alt="jonas" width="80" height="50" />
+            </div>
+            <div>
+              <p>Jonas</p>
+
+              <ul>
+                <li>248 kabinetas</li>
+                <li>jonas@gmail.com</li>
+              </ul>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td colspan="3">Java programavimas</td>
+        </tr>
+        <tr>
+          <td>
+            <div>
+              <img src="images/Rasa.jpg" alt="Rasa" width="80" height="50" />
+            </div>
+            <div>
+              <p>Rasa</p>
+
+              <ul>
+                <li>201 kabinetas</li>
+                <li>rasa@gmail.com</li>
+              </ul>
+            </div>
+          </td>
+          <td colspan="2">JavaScript</td>
+          <td></td>
+          <td colspan="2">CSS</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <div>
+              <img src="images/ona.jpg" alt="Ona" width="80" height="50" />
+            </div>
+            <div>
+              <p>Ona</p>
+
+              <ul>
+                <li>212 kabinetas</li>
+                <li>ona@gmail.com</li>
+              </ul>
+            </div>
+          </td>
+          <td colspan="5">PHP</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
