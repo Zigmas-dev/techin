@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  grid-template-areas:
+    "d a f"
+    "e b c";
+}
+
+.a {
+  grid-area: a;
+}
+.b {
+  grid-area: b;
+}
+.c {
+  grid-area: c;
+}
+.d {
+  grid-area: d;
+}
+.e {
+  grid-area: e;
+}
+.f {
+  grid-area: f;
+}
+
+.card {
+  background-color: plum;
+  padding: 2rem;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: white;
+}
