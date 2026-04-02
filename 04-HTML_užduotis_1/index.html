@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>04-Html. Uždoutis 1</title>
+    <style>
+      form {
+        width: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label>Title</label>
+      <div class="title-group">
+        <input type="radio" name="title" id="mr" value="Mr" />
+        <label form="mr">Mr</label>
+
+        <input type="radio" name="title" id="mrs" value="Mrs" />
+        <label form="mrs">Mrs</label>
+
+        <input type="radio" name="title" id="miss" value="Miss" />
+        <label form="miss">Miss</label>
+      </div>
+
+      <input type="text" name="firstname" placeholder="First name" />
+      <input type="text" name="lastname" placeholder="Last name" />
+      <input type="email" name="email" placeholder="Email" />
+      <input type="phone" name="phone" placeholder="Phone" />
+      <input type="password" name="password" placeholder="Password" />
+
+      <label for="country">Country</label>
+      <select id="country" name="country" required>
+        <option value="">Select counrty</option>
+        <option value="LT">Lithuania</option>
+        <option value="LV">Latvia</option>
+        <option value="EE">Estonia</option>
+        <option value="Pl">Poland</option>
+      </select>
+
+      <div class="checkbox-group">
+        <input type="checkbox" id="terms" name="terms" required />
+        <label for="terms"
+          >I agree to the
+          <a href="terms.html" target="_blank">terms of conditions</a></label
+        >
+      </div>
+
+      <div class="buuton-group">
+        <button type="submit">Sign up</button>
+        <button type="reset">Reset form</button>
+      </div>
+    </form>
+  </body>
+</html>
