@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+h3,
+p {
+  margin: 0;
+}
+
+.meals {
+  width: 100%;
+  max-width: 65rem;
+  min-width: 30rem;
+  background-color: lightgray;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.main-meal,
+.meal-list {
+  flex-basis: 30rem;
+  max-width: 30rem;
+  background-color: lightgray;
+}
+
+.meal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.meal {
+  display: flex;
+  gap: 1rem;
+}
+
+.meal-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-meal img {
+  width: 100%;
+}
+
+.meal img {
+  width: 200px;
+  height: auto;
+}
