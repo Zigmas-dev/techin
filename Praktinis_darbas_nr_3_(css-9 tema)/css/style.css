@@ -1,0 +1,360 @@
+/* Pagrindiniai kintamieji */
+:root {
+  --items-bg--color: orange;
+  --font-family: "Segoe UI", sans-serif;
+}
+
+/* Bendrieji nustatymai */
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+span {
+  text-transform: capitalize;
+  font-family: var(--font-family);
+}
+
+p {
+  line-height: 1.7;
+}
+
+.container {
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Header (Antraštė) */
+.header {
+  background-image: url(../img/nature-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  margin: 0;
+  padding: 1rem;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  margin: 0;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 2 1 20rem;
+  justify-content: flex-end;
+}
+
+.nav-menu a,
+.copyrights a {
+  text-decoration: none;
+}
+
+.nav-menu a {
+  color: white;
+}
+
+.header-content {
+  align-items: center;
+  text-align: center;
+  padding: 5rem;
+}
+
+.welcome {
+  background-color: var(--items-bg--color);
+  padding: 0.5rem 1rem;
+}
+
+/* Main sekcija */
+.main,
+.features-services,
+.quotes,
+.subscribe-newsletter,
+.copyrights {
+  align-items: center;
+  text-align: center;
+  margin: 7rem 0;
+  padding: 0 12rem;
+}
+
+.main p::after,
+.features-services > p::after,
+.subscribe-newsletter p::after {
+  content: "";
+  display: block;
+  width: 10rem;
+  height: 2px;
+  background-color: var(--items-bg--color);
+  margin: 2rem auto;
+}
+
+/* Nuotraukų sekcija */
+.images {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 5rem;
+}
+
+.images-section-1,
+.images-section-2 {
+  display: flex;
+  gap: 1rem;
+}
+
+.images-section-1 img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.images-section-1 img:first-child {
+  flex: 1;
+}
+
+.images-section-1 img:last-child {
+  flex: 2;
+}
+
+.images-section-2 img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.images-section-2 img:first-child {
+  flex: 2;
+}
+
+/* Paslaugų sekcija */
+.services-cards {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 5rem;
+}
+
+.card {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.card-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  color: var(--items-bg--color);
+  margin-bottom: 0.5rem;
+}
+
+/* Citatos */
+blockquote {
+  margin-bottom: 2.5rem;
+}
+
+cite {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+cite::before {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 2px;
+  background-color: black;
+}
+
+/* Prenumeratos forma */
+.subscribe {
+  margin: 4rem;
+}
+
+input {
+  width: 300px;
+  padding: 0.3rem 1rem;
+}
+
+.subscribe-btn {
+  background-color: var(--items-bg--color);
+  border: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Footer (Poraštė) */
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: black;
+  padding: 2rem;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.footer-socials,
+.copyrights {
+  margin: 0;
+  gap: 1rem;
+}
+
+.footer-socials img {
+  width: 30px;
+  height: 30px;
+  filter: grayscale(100%);
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.welcome,
+.subscribe-btn,
+.copyrights p,
+.copyrights a {
+  text-transform: uppercase;
+}
+
+.copyrights p {
+  color: grey;
+  margin: 0;
+}
+
+.copyrights a {
+  color: white;
+  margin: 0;
+}
+
+/* ---MEDIA QUERIES--- */
+/* ---Medium (iki 768px)--- */
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .main,
+  .features-services,
+  .quotes,
+  .subscribe-newsletter,
+  .copyrights {
+    margin: 4rem 0;
+    padding: 0 2rem;
+  }
+
+  .images {
+    margin: 2rem;
+  }
+
+  .images-section-1,
+  .images-section-2 {
+    flex-direction: column;
+  }
+
+  .services-cards {
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .subscribe {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .subscribe input {
+    flex: 1;
+    max-width: 400px;
+  }
+
+  .subscribe button {
+    flex: none;
+  }
+
+  .footer {
+    gap: 0.5rem;
+    padding: 2rem;
+  }
+
+  .copyrights {
+    margin: 1rem;
+  }
+}
+
+/* ---Maža (iki 480px)--- */
+@media (max-width: 480px) {
+  .container {
+    max-width: 480px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-menu {
+    flex: none;
+  }
+
+  .header-content {
+    padding: 1rem 0;
+  }
+
+  .services-cards {
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .subscribe {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .subscribe input,
+  .subscribe button {
+    width: 100%;
+    max-width: 400px;
+  }
+}
