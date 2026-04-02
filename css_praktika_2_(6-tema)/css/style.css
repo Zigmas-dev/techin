@@ -1,0 +1,89 @@
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+  width: 900px;
+  font-size: 0;
+  margin: 10px;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.cards {
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 15px;
+}
+
+.sedans-card,
+.suvs-card,
+.luxury-card {
+  padding: 4rem;
+}
+
+.sedans-card {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.suvs-card {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury-card {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.description h1 {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+  color: hsl(0, 0%, 95%);
+  text-transform: uppercase;
+}
+
+.description p {
+  font-family: "Lexend deca", sans-serif;
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.75);
+  margin-bottom: 4rem;
+}
+
+.btn {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  padding: 0.6rem 1.5rem;
+  border-radius: 1rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.sedans-btn,
+.suvs-btn,
+.luxury-btn {
+  background-color: hsl(0, 0%, 95%);
+}
+
+.sedans-btn {
+  color: hsl(31, 77%, 52%);
+}
+
+.suvs-btn {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury-btn {
+  color: hsl(179, 100%, 13%);
+}
+
+.sedans-btn:hover,
+.suvs-btn:hover,
+.luxury-btn:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 100%);
+  border: 2px solid hsl(0, 0%, 95%);
+}
