@@ -1,0 +1,17 @@
+.container {
+  width: 46rem;
+  background-color: lightgray;
+}
+
+.box {
+  display: inline-block;
+  width: 350px;
+  background-color: black;
+  color: white;
+  margin: 0.5rem;
+  vertical-align: top;
+}
+
+p {
+  padding: 0.5rem;
+}
